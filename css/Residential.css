@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body-one {
+    position: relative;
+    width: 100%;
+    height: .8558rem;
+}
+
+.body-one .beijin {
+    width: 100%;
+}
+
+.body-one .first {
+    position: absolute;
+    width: 1.6063rem;
+    height: .385rem;
+    left: .8558rem;
+    top: .1712rem;
+}
+
+.body-one span {
+    text-align: center;
+    display: block;
+    width: 1.2903rem;
+    height: .8558rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .1448rem;
+    line-height: .8558rem;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.body-one .nav-one {
+    position: absolute;
+    left: 3.5089rem;
+    top: 0;
+}
+
+.body-one .xialaone {
+    position: absolute;
+    left: 3.5089rem;
+    top: .8558rem;
+    width: 3.239rem;
+    background: #EAFBFC;
+    display: none;
+    z-index: 999;
+}
+
+.body-one .xialaone li {
+    margin: .1646rem 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .1185rem;
+    line-height: .1777rem;
+    letter-spacing: -0.03em;
+    color: #283C47;
+}
+
+.body-one .xialaone ul {
+    margin-left: .1777rem;
+    margin-top: .1975rem;
+    margin-bottom: 0;
+}
+
+.body-one .baoone:hover .nav-one {
+    color: #2B67B2;
+}
+
+.body-one .nav-two {
+    position: absolute;
+    left: 4.8058rem;
+    top: 0;
+}
+
+.body-one .nav-two:hover {
+    color: #2B67B2;
+}
+
+.body-one .nav-three {
+    position: absolute;
+    width: 1.5537rem;
+    left: 6.0632rem;
+    top: 0;
+}
+
+.body-one .nav-three:hover {
+    color: #2B67B2;
+}
+
+.body-one .xialatwo {
+    position: absolute;
+    width: 3.239rem;
+    left: 6.0632rem;
+    top: .8558rem;
+    background: #EAFBFC;
+    display: none;
+    z-index: 999;
+}
+
+.body-one .xialatwo ul {
+    margin-left: .1382rem;
+    margin-top: .1975rem;
+    margin-bottom: 0;
+}
+
+.body-one .xialatwo li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .1185rem;
+    line-height: .1777rem;
+    letter-spacing: -0.03em;
+    color: #010101;
+    margin: .3292rem 0;
+}
+
+@media screen and (max-width:517px) {
+    .body-one .xialatwo li {
+        -webkit-transform-origin-x: 0;
+        /*缩小后文字居左*/
+        -webkit-transform: scale(0.6);
+        /*关键*/
+        transform: scale(0.6);
+    }
+}
+
+.body-one .nav-four {
+    position: absolute;
+    width: 1.5142rem;
+    left: 7.8012rem;
+    top: 0;
+}
+
+.body-one .nav-four:hover {
+    color: #2B67B2;
+}
+
+@media screen and (max-width:770px) {
+    .body-one a span {
+        -webkit-transform-origin-x: 0;
+        /*缩小后文字居左*/
+        -webkit-transform: scale(0.8);
+        /*关键*/
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width:595px) {
+    .body-one a span {
+        -webkit-transform-origin-x: 0;
+        /*缩小后文字居左*/
+        -webkit-transform: scale(0.6);
+        /*关键*/
+        transform: scale(0.6);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .body-one a span {
+        -webkit-transform-origin-x: 0;
+        /*缩小后文字居左*/
+        -webkit-transform: scale(0.4);
+        /*关键*/
+        transform: scale(0.4);
+    }
+}
+
+.body-two {
+    width: 100%;
+    height: 2.6662rem;
+    background-image: url(../img/Group\ 101.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-2px);
+}
+
+
+.body-three .container {
+    margin-top: .5925rem;
+}
+
+.body-three .left {
+    width: 231px;
+    height: 184px;
+}
+
+.body-three .left img {
+    width: 100%;
+    height: 100%;
+}
+.body-three .right .title{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: -0.06em;
+color: #010101;
+margin-bottom: 30px;
+}
+
+.body-three .right .content{
+    font-family: 'I.Ngaan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.06em;
+    color: #010101;
+}
+
+.body-three .bottom-left .title{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: -0.06em;
+color: #010101;
+margin-bottom: 30px;
+}
+
+.body-three .bottom-left .content{
+    font-family: 'I.Ngaan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.06em;
+    color: #010101;
+}
+
+.body-three .bottom-right {
+    width: 244px;
+    height: 176px;
+}
+
+.body-three .bottom-right img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: .711rem;
+}
+.hidden .title{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: -0.06em;
+color: #010101;
+margin-bottom: 30px;
+}
+
+.hidden .content,.hidden .title{
+    display: none;
+}
+.hidden .content{
+    font-family: 'I.Ngaan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.06em;
+    color: #010101;
+}
+
+@media screen and (max-width: 768px) {
+    .body-three .bottom-left {
+        display: none;
+    }
+
+    .hidden .title, .hidden .content {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .body-three .bottom-right {
+        margin-top: 20px;
+    }
+
+    .body-three .right {
+        margin-top: 20px;
+    }
+}

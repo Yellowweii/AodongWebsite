@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Orientfiltr Pharmaceutical,Food and Beverage,Laboratory,Medical,Chemicals&Polymers,Industrial Filtration,Oil&Gas,Power Generation,Residential">
+    <link rel="stylesheet" href="./css/Extractables and Leachables Testing.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./js/flexible.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <title>Extractables and Leachables Testing</title>
+</head>
+
+<div class="body-one">
+    <img class="beijin" src="./img/Rectangle 79.jpg" alt="">
+    <a href="index.html"><img class="first" src="./img/资源 3 2 (1).png" alt=""></a>
+    <div class="baoone">
+        <a href="application.html"><span class="nav-one">APPLICATIONS</span></a>
+        <div class="xialaone">
+            <ul>
+                <a href="Pharmaceutical.html">
+                    <li>Pharmaceutical</li>
+                </a>
+                <a href="Food and Beverage.html">
+                    <li>Food and Beverage</li>
+                </a>
+                <a href="Laboratory.html">
+                    <li>Laboratory</li>
+                </a>
+                <a href="Medical.html">
+                    <li>Medical</li>
+                </a>
+                <a href="Chemical Polymers.html">
+                    <li>Chemicals&Polymers</li>
+                </a>
+                <a href="Industrial Filtration.html">
+                    <li>Industrial Filtration</li>
+                </a>
+                <a href="Oil&Gas.html">
+                    <li>Oil&Gas</li>
+                </a>
+                <a href="Power Generation.html">
+                    <li>Power Generation</li>
+                </a>
+                <a href="Residential.html">
+                    <li>Residential</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <a href="product.html"><span class="nav-two">PRODUCTS</span></a>
+    <div class="baotwo">
+        <a href="validation service.html"><span class="nav-three">VALIDATION&nbspSERVICE </span></a>
+        <div class="xialatwo">
+            <ul>
+                <a href="Bacterial Retention Testing.html">
+                    <li>Bacterial&nbsp;Retention&nbsp;Testing</li>
+                </a>
+                <a href="Chemical Compatibility Testing.html">
+                    <li>Chemical&nbsp;Compatibility&nbsp;Testing</li>
+                </a>
+                <a href="Product Wet Integrity Testing.html">
+                    <li>Product&nbspWet&nbsp;Integrity&nbspTesting</li>
+                </a>
+                <a href="Extractables and Leachables Testing.html">
+                    <li>Extractables&nbsp;and&nbsp;Leachables&nbsp;Testing </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <a href="#"><span onclick="tobottom()" class="nav-four">ABOUT&nbspORIENTFILTR</span></a>
+</div>
+<div class="body-two">
+    <img class="img" src="./img/Group 106.png" alt="">
+</div>
+<div class="body-three">
+    <div class="container">
+        <div class="row">
+            <div class="left col-md-6">
+                <img class="img" src="./img/Rectangle 97.png" alt="">
+            </div>
+            <div class="right col-md-6">
+                <div class="masktwo">
+                    <div class="body">
+                        Understanding the potential of leachables to affect patient safety is a critical step in the validation strategy of any biopharmaceutical manufacturer. Our Extractables & Leachables (E&L) services will consider a risk-based approach to determine if patient safety is adversely affected by plastic materials coming into contact with the final drug product during your process, while assessing potential toxicity to patients.
+<br><br>
+In accordance with regulatory expectations, our E&L team will conduct a thorough interpretation of the extractables datasets while evaluating the criticality of your process train and single-use system. We can determine:  <br>
+       Single-use components to be evaluated <br>
+       Choice of analytical method  <br>
+       Model solvent(s)  <br>
+       Relevant worst-case conditions 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.baoone').hover(function () {
+            $('.xialaone').stop().slideToggle('fast')
+        })
+        $('.baotwo').hover(function () {
+            $('.xialatwo').stop().slideToggle('fast')
+        })
+        const lis = document.querySelectorAll('.body-one ul li')
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].addEventListener('mouseenter', function () {
+                lis[i].style.color = '#2B67B2'
+            })
+            lis[i].addEventListener('mouseleave', function () {
+                lis[i].style.color = 'black'
+            })
+        }
+    })
+</script>
+<script>
+    //这一步是为了防止，点击事件的过度发生。
+    var myTimer = -1;
+    function back() {
+        //1、获取当前滚动了多少距离
+        //2、启动定时器，以一定时间减少响应的滚动距离
+        var scrollTo = document.documentElement.scrollTop || document.body.scrollTop
+        if (myTimer == -1) {
+            myTimer = setInterval(() => {
+                scrollTo -= 60
+                if (scrollTo <= 0) {
+                    scrollTo = 0
+                    window.clearInterval(myTimer)
+                    myTimer = -1
+                }
+                window.scrollTo(0, scrollTo) //这是值  是指离开网页顶部的距离   
+            }, 10);
+        }
+
+    }
+</script>
+<script>
+    var myTimer = -1;
+    function tobottom() {
+        //1、获取当前滚动了多少距离
+        //2、启动定时器，以一定时间减少响应的滚动距离
+        var scrollTo = document.documentElement.scrollTop || document.body.scrollTop
+        const bodyfive = document.querySelector('.body-five')
+        if (myTimer == -1) {
+            myTimer = setInterval(() => {
+                scrollTo += 60
+                if (scrollTo >= bodyfive.offsetTop) {
+                    scrollTo = bodyfive.offsetTop
+                    window.clearInterval(myTimer)
+                    myTimer = -1
+                }
+                window.scrollTo(0, scrollTo) //这是值  是指离开网页顶部的距离   
+            }, 10);
+        }
+
+    }
+</script>
+<script>
+    function jump(id) {
+        $('html,body').animate({ scrollTop: $('#' + id).offset().top }, 1000)
+    };
+</script>
+</body>
+
+</html>
