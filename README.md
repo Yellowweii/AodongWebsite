@@ -1,3 +1,4 @@
+```vue
 <!-- eslint-disable max-lines-->
 <template>
   <div v-loading="isUploading" class="search-by-resource" element-loading-text="正在上传中">
@@ -1628,3 +1629,5 @@ onMounted(() => {
   }
 }
 </style>
+
+```
